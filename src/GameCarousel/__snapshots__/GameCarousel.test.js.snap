@@ -1,0 +1,122 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GameCarousel component renders the GameCarousel given GamePage props 1`] = `
+<Fragment>
+  <div
+    className="slideshow-container"
+  >
+    <div
+      className="showSlide fade container"
+      key="0"
+      style={
+        Object {
+          "backgroundColor": "black",
+          "backgroundImage": "url(https://steamcdn-a.akamaihd.net/steam/apps/367520/capsule_616x353.jpg?t=1577747500)",
+          "backgroundPosition": "center",
+          "backgroundRepeat": "no-repeat",
+          "backgroundSize": "contain",
+        }
+      }
+    >
+      <div
+        className="numbertext "
+      >
+        1
+         / 
+        1
+      </div>
+    </div>
+  </div>
+  <br />
+  <div
+    className="style-align"
+  >
+    <span
+      className="dot"
+      key="0"
+      onClick={[Function]}
+    />
+  </div>
+</Fragment>
+`;
+
+exports[`GameCarousel component renders the GameCarousel given GamesHomePage props 1`] = `
+<Fragment>
+  <div
+    className="slideshow-container"
+  >
+    <Link
+      key="0"
+      to="/games/2"
+    >
+      <div
+        className="showSlide fade container"
+        style={
+          Object {
+            "backgroundColor": "black",
+            "backgroundImage": "url(https://steamcdn-a.akamaihd.net/steam/apps/367520/capsule_616x353.jpg?t=1577747500)",
+            "backgroundPosition": "center",
+            "backgroundRepeat": "no-repeat",
+            "backgroundSize": "contain",
+          }
+        }
+      >
+        <div
+          className="numbertext"
+        >
+          1
+           / 
+          2
+        </div>
+      </div>
+    </Link>
+    <Link
+      key="1"
+      to="/games/3"
+    >
+      <div
+        className="mySlides fade container"
+        style={
+          Object {
+            "backgroundColor": "black",
+            "backgroundImage": "url(https://steamcdn-a.akamaihd.net/steam/apps/367520/capsule_616x353.jpg?t=1577747500)",
+            "backgroundPosition": "center",
+            "backgroundRepeat": "no-repeat",
+            "backgroundSize": "contain",
+          }
+        }
+      >
+        <div
+          className="numbertext"
+        >
+          2
+           / 
+          2
+        </div>
+      </div>
+    </Link>
+    <a
+      className="next game-carousel-button"
+      href="#0"
+      onClick={[Function]}
+    >
+      ❯
+    </a>
+  </div>
+  <br />
+  <div
+    className="style-align"
+  >
+    <span
+      className="dot"
+      key="0"
+      onClick={[Function]}
+    />
+    <span
+      className="dot"
+      key="1"
+      onClick={[Function]}
+    />
+  </div>
+</Fragment>
+`;

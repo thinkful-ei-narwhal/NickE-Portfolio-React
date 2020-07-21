@@ -1,0 +1,182 @@
+/* --- carousel.css --- */
+
+#carousel {
+  perspective: 400px;
+  padding-top: 4rem;
+  font-size: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0rem;
+  overflow: hidden;
+}
+
+figure#spinner {
+  transform-style: preserve-3d;
+  height: 300px;
+  transform-origin: 50% 50% -500px;
+  transition: 1s;
+}
+
+figure#spinner img {
+  width: 50%;
+  max-width: 400px;
+  position: absolute;
+  left: 35%;
+  transform-origin: 50% 50% -500px;
+  outline: 1px solid transparent;
+  margin: 0;
+}
+
+figure#spinner img:nth-child(1) {
+  transform: rotateY(0deg);
+}
+figure#spinner img:nth-child(2) {
+  transform: rotateY(-45deg);
+}
+figure#spinner img:nth-child(3) {
+  transform: rotateY(-90deg);
+}
+figure#spinner img:nth-child(4) {
+  transform: rotateY(-135deg);
+}
+figure#spinner img:nth-child(5) {
+  transform: rotateY(-180deg);
+}
+figure#spinner img:nth-child(6) {
+  transform: rotateY(-225deg);
+}
+figure#spinner img:nth-child(7) {
+  transform: rotateY(-270deg);
+}
+figure#spinner img:nth-child(8) {
+  transform: rotateY(-315deg);
+}
+div#carousel ~ span {
+  color: black;
+  margin: 5%;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  transition: 0.6s color;
+  position: relative;
+  margin-top: -6rem;
+  border-bottom: none;
+  line-height: 0;
+}
+
+div#carousel ~ span:hover {
+  color: #888;
+  cursor: pointer;
+}
+
+.image {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+@media only screen and (min-width: 400px) {
+  figure#spinner {
+    height: 350px;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  figure#spinner {
+    height: 400px;
+  }
+}
+
+/* @media only screen and (min-width: 600px) {
+  #carousel {
+    perspective: 600px;
+  }
+
+  figure#spinner {
+    height: 400px;
+  }
+
+  figure#spinner img {
+    width: 60%;
+  }
+} */
+
+@media only screen and (max-width: 750px) {
+  #carousel {
+    perspective: 800px;
+  }
+
+  figure#spinner {
+    height: 425px;
+  }
+
+  figure#spinner img {
+    width: 50%;
+    left: 0%;
+    max-width: 250px;
+    transform-origin: 50% 50% -300px;
+  }
+}
+
+/* @media only screen and (max-width: 800px) {
+  #carousel {
+    perspective: 1200px;
+  }
+
+  figure#spinner {
+    height: 425px;
+  }
+
+  figure#spinner img {
+    width: 50%;
+  }
+} */
+
+/* @media only screen and (max-width: 850px) {
+  #carousel {
+    perspective: 1200px;
+  }
+
+  figure#spinner {
+    height: 425px;
+  }
+
+  figure#spinner img {
+    width: 50%;
+    left: 25%;
+  }
+} */
+
+/* @media only screen and (max-width: 900px) {
+  #carousel {
+    perspective: 1200px;
+  }
+
+  figure#spinner {
+    height: 425px;
+  }
+
+  figure#spinner img {
+    width: 50%;
+    left: 25%;
+  }
+} */
+
+@media only screen and (min-width: 1000px) {
+  #carousel {
+    perspective: 1200px;
+  }
+
+  figure#spinner {
+    height: 425px;
+  }
+
+  figure#spinner img {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  figure#spinner img {
+    width: 40%;
+  }
+}
