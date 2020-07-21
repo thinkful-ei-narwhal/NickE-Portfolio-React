@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import "./GameCarousel.css";
 
 export default class GamesCarousel extends Component {
@@ -12,6 +11,9 @@ export default class GamesCarousel extends Component {
         site: "https://thenevel.itch.io/runefinder",
         link1: "",
         link2: "",
+        description:
+          "Here is a free demo level of my game, PC only.  I’m currently looking for an artist to help complete the project.  If you’re interested in collaborating, please contact me at runefindergamedev@gmail.com.",
+        techStack: "",
       },
       {
         imgUrl: "https://i.imgur.com/PLCJ62s.png",
@@ -20,6 +22,8 @@ export default class GamesCarousel extends Component {
           "https://github.com/thinkful-ei-narwhal/project-blackburn-client",
         link2:
           "https://github.com/thinkful-ei-narwhal/project-blackburn-server",
+        description: "",
+        techStack: "",
       },
       {
         imgUrl: "https://i.imgur.com/Gu9IOvZ.png",
@@ -27,6 +31,8 @@ export default class GamesCarousel extends Component {
         link1: "https://github.com/thinkful-ei-narwhal/vgfinder-client-nicke",
         link2:
           "https://github.com/thinkful-ei-narwhal/vgfinder-server-capstone-nicke",
+        description: "",
+        techStack: "",
       },
       {
         imgUrl: "https://i.imgur.com/t3CJpMe.png",
@@ -34,6 +40,8 @@ export default class GamesCarousel extends Component {
         link1: "https://github.com/thinkful-ei-narwhal/DSA-Client-Nick-Andrew",
         link2:
           "https://github.com/thinkful-ei-narwhal/DSA-Petful-Server-Nick-Andrew",
+        description: "",
+        techStack: "",
       },
       {
         imgUrl: "https://i.imgur.com/AbQNQ86.png",
@@ -42,18 +50,24 @@ export default class GamesCarousel extends Component {
           "https://github.com/thinkful-ei-narwhal/spaced-repetition-client-andrew-nick",
         link2:
           "https://github.com/thinkful-ei-narwhal/spaced-repetition-api-andrew-nick",
+        description: "",
+        techStack: "",
       },
       {
         imgUrl: "https://i.imgur.com/AOlX6VF.png",
         site: "https://thinkful-ei-narwhal.github.io/NickE-bookmarks-app/",
         link1: "https://github.com/thinkful-ei-narwhal/NickE-bookmarks-app",
         link2: "",
+        description: "",
+        techStack: "",
       },
       {
         imgUrl: "https://i.imgur.com/0ddRuhX.png",
         site: "https://noteful-app.uncleenzo.now.sh/folder/955365",
         link1: "https://github.com/thinkful-ei-narwhal/noteful-client-nicke",
         link2: "https://github.com/thinkful-ei-narwhal/noteful-server-nicke",
+        description: "",
+        techStack: "",
       },
       {
         imgUrl: "https://i.imgur.com/dqsvBWb.png",
@@ -61,6 +75,8 @@ export default class GamesCarousel extends Component {
         link1:
           "https://github.com/thinkful-ei-narwhal/Quiz-Full-App-Nick-Isaac",
         link2: "",
+        description: "",
+        techStack: "",
       },
     ],
   };
@@ -112,6 +128,7 @@ export default class GamesCarousel extends Component {
   renderOnLoad() {
     return (
       <>
+        <h2>Projects</h2>
         <div className="slideshow-container">
           {this.mapImages()}
           {this.state.currentSlide === 0 ? null : (
