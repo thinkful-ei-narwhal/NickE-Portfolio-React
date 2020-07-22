@@ -4,8 +4,10 @@
 
 .container {
   position: relative;
-  width: 100%;
+  z-index: 1;
+  width: 95%;
   padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  margin: auto !important;
 }
 
 .game-carousel-button {
@@ -32,9 +34,9 @@
   justify-content: center;
 }
 
-/* Next & previous buttons */
 .prev,
 .next {
+  z-index: 2;
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -54,7 +56,6 @@
 .slideshow-container {
   max-width: 1000px;
   position: relative;
-  margin: auto;
 }
 
 /* Hide the images by default */
@@ -66,18 +67,18 @@
   display: block;
 }
 
-
-
 /* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
+  margin-right: 20px;
 }
 
 /* Position the "prev button" to the left */
 .prev {
   left: 0;
   border-radius: 3px 0 0 3px;
+  margin-left: 20px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -156,4 +157,9 @@
   }
 }
 
-
+@media (min-width: 1024px) {
+  .p-text {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}

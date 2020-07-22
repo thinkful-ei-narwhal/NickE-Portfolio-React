@@ -8,3 +8,9 @@
   padding-left: 15px;
   padding-right: 15px;
 }
+
+.headline-text {
+  font-size: 28px;
+  line-height: 40px;
+  color: #B3B3B3;
+}

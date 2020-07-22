@@ -5,6 +5,11 @@ import Footer from "./Footer/Footer";
 import "./App.css";
 import AboutMe from "./AboutMe/AboutMe";
 import Headline from "./Headline/Headline";
+import { faHtml5, faJs, faNodeJs, faReact, faCss3, faUnity, faNpm } from "@fortawesome/free-brands-svg-icons";
+import { library } from "@fortawesome/fontawesome-svg-core";
+
+
+library.add(faHtml5, faJs,faNodeJs,faReact,faCss3,faUnity, faNpm);
 
 export default class App extends Component {
   state = {
@@ -17,12 +22,14 @@ export default class App extends Component {
           <header className="App__header">
             <Header />
           </header>
-          <Headline />
           {this.state.hasError && (
             <p className="red">There was an error! Oh no!</p>
           )}
-          <AboutMe />
-          <Carousel />
+          <section className="content">
+            <Headline />
+            <AboutMe />
+            <Carousel />
+          </section>
           <Footer />
         </main>
       </div>
