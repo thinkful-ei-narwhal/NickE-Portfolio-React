@@ -4,6 +4,7 @@ import "./AboutMe.css";
 export default class AboutMe extends Component {
   render() {
     return (
+      <div className="full-screen">
       <article className="about-me headline-2-text" id="anchor1">
         <div className="header-container">
           <h2 className="aboutme-color">About Me</h2>
@@ -29,6 +30,7 @@ export default class AboutMe extends Component {
           </p>
         </div>
       </article>
+      </div>
     );
   }
 }

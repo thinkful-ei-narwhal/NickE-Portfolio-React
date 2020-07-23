@@ -10,6 +10,10 @@ h2 {
   font-size: 32px;
 }
 
+.full-screen {
+  height: 100vh;
+}
+
 .aboutme-color {
   color: #ff9b80 !important;
 }
@@ -20,6 +24,10 @@ h2 {
 
 .contact-color {
   color: #dc78de !important;
+}
+
+.img-width {
+  width: 90%;
 }
 
 .headline {

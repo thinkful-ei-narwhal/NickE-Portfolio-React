@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/fontawesome-free-solid";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import "./Header.css";
+import { faBars } from "@fortawesome/fontawesome-free-solid";
 
 export default class Header extends Component {
   state = {
@@ -68,32 +68,32 @@ export default class Header extends Component {
         {this.state.showDropdown ? (
           <div className="dropdown-content dropdown-pos">
             <div className="display-dropdown-content">
-              <a
+              <AnchorLink
                 href="#anchor1"
                 className="menu-button"
-                onClick={(e) => this.anchorListener(e)}
+                offset="150"
                 aria-label="About Me page anchor"
               >
                 <p className="nav nav-text nav-drop aboutme-color">About Me</p>
-              </a>
-              <a
+              </AnchorLink>
+              <AnchorLink
                 href="#anchor2"
                 className="menu-button"
-                onClick={(e) => this.anchorListener(e)}
+                offset="150"
                 aria-label="Portfolio page anchor"
               >
                 <p className="nav nav-text nav-drop portfolio-color">
                   Projects
                 </p>
-              </a>
-              <a
+              </AnchorLink>
+              <AnchorLink
                 href="#anchor3"
                 className="menu-button"
-                onClick={(e) => this.anchorListener(e)}
+                offset="150"
                 aria-label="Contact page anchor"
               >
                 <p className="nav nav-text nav-drop contact-color">Contact</p>
-              </a>
+              </AnchorLink>
             </div>
           </div>
         ) : null}

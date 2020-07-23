@@ -5,11 +5,19 @@ import Footer from "./Footer/Footer";
 import "./App.css";
 import AboutMe from "./AboutMe/AboutMe";
 import Headline from "./Headline/Headline";
-import { faHtml5, faJs, faNodeJs, faReact, faCss3, faUnity, faNpm } from "@fortawesome/free-brands-svg-icons";
+import {
+  faHtml5,
+  faJs,
+  faNodeJs,
+  faReact,
+  faCss3,
+  faUnity,
+  faNpm,
+} from "@fortawesome/free-brands-svg-icons";
+import { faBars } from "@fortawesome/fontawesome-free-solid";
 import { library } from "@fortawesome/fontawesome-svg-core";
 
-
-library.add(faHtml5, faJs,faNodeJs,faReact,faCss3,faUnity, faNpm);
+library.add(faHtml5, faJs, faNodeJs, faReact, faCss3, faUnity, faNpm, faBars);
 
 export default class App extends Component {
   state = {
@@ -26,6 +34,7 @@ export default class App extends Component {
             <p className="red">There was an error! Oh no!</p>
           )}
           <section className="content">
+
             <Headline />
             <AboutMe />
             <Carousel />
