@@ -41,7 +41,7 @@
   position: absolute;
   top: 50%;
   width: auto;
-  padding: 16px;
+  padding: 22px;
   margin-top: -22px;
   color: white;
   font-weight: bold;
@@ -144,13 +144,39 @@
     width: 100%;
     left: 0%;
   }
+
+  /* Position the "next button" to the right */
+  .next {
+    margin-right: 0px;
+  }
+
+  /* Position the "prev button" to the left */
+  .prev {
+    margin-left: 0px;
+  }
+
+   .prev,
+  .next {
+    padding: 17px;
+  }
 }
 
 @media only screen and (max-width: 500px) {
   .prev,
   .next {
-    padding: 5px;
+    padding: 15px;
   }
+
+  /* Position the "next button" to the right */
+  .next {
+    margin-right: 0px;
+  }
+
+  /* Position the "prev button" to the left */
+  .prev {
+    margin-left: 0px;
+  }
+
   .container {
     width: 100%;
     left: 0%;

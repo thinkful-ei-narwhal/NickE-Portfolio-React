@@ -10,10 +10,6 @@ h2 {
   font-size: 32px;
 }
 
-.full-screen {
-  height: 100vh;
-}
-
 .aboutme-color {
   color: #ff9b80 !important;
 }
@@ -362,6 +358,10 @@ h3 {
 }
 
 @media (min-width: 1024px) {
+  .full-screen {
+    height: 100vh;
+  }
+
   .nav-text {
     font-size: 22px;
   }

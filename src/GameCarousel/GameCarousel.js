@@ -119,21 +119,27 @@ export default class GamesCarousel extends Component {
       const slide =
         this.state.currentSlide === index ? "showSlide" : "mySlides";
       return (
-        <div
-          key={index}
-          style={{
-            backgroundColor: "black",
-            backgroundImage: `url(${reelObj.imgUrl})`,
-            backgroundSize: "contain",
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "center",
-          }}
-          className={`${slide} fade container`}
+        <a
+          href={this.state.reel[this.state.currentSlide].site}
+          rel="noopener noreferrer"
+          target="_blank"
         >
-          <div className="numbertext ">
-            {index + 1} / {this.state.reel.length}
+          <div
+            key={index}
+            style={{
+              backgroundColor: "black",
+              backgroundImage: `url(${reelObj.imgUrl})`,
+              backgroundSize: "contain",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center",
+            }}
+            className={`${slide} fade container`}
+          >
+            <div className="numbertext ">
+              {index + 1} / {this.state.reel.length}
+            </div>
           </div>
-        </div>
+        </a>
       );
     });
   }

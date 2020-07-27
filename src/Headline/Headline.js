@@ -5,7 +5,7 @@ import "./Headline.css";
 export default class Headline extends Component {
   render() {
     const opts = {
-      height: "500",
+      height: "432",
       width: "100%",
       playerVars: {
         autoplay: 1,
