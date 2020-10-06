@@ -14,10 +14,21 @@ import {
   faUnity,
   faNpm,
 } from "@fortawesome/free-brands-svg-icons";
-import { faBars } from "@fortawesome/fontawesome-free-solid";
+import { faBars, faDatabase } from "@fortawesome/fontawesome-free-solid";
 import { library } from "@fortawesome/fontawesome-svg-core";
 
-library.add(faHtml5, faJs, faNodeJs, faReact, faCss3, faUnity, faNpm, faBars);
+library.add(
+  faHtml5,
+  faJs,
+  faNodeJs,
+  faReact,
+  faCss3,
+  faUnity,
+  faNpm,
+  faBars,
+  faDatabase,
+  
+);
 
 export default class App extends Component {
   state = {
@@ -34,7 +45,6 @@ export default class App extends Component {
             <p className="red">There was an error! Oh no!</p>
           )}
           <section className="content">
-
             <Headline />
             <AboutMe />
             <Carousel />

@@ -273,6 +273,11 @@ p.nav-drop {
 
 .tech-stack {
   margin: auto;
+  margin-top: 20px;
+}
+
+.project {
+  border-top: 1px solid #b3b3b3;
 }
 
 .project-description {
